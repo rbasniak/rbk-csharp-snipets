@@ -1,0 +1,32 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>rbkListProp</Title>
+      <Description>Creates a new list property with backing field and initialization</Description>
+      <Author>rbasniak</Author>
+      <Shortcut>rbkListProp</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Property name</ToolTip>
+          <Default>MyProperty</Default>
+        </Literal>
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Property type</ToolTip>
+          <Default>MyType</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[private HashSet<$type$> _$name$;
+    _$name$ = new HashSet<$type$>();
+    public virtual IEnumerable<$type$> $name$ => _$name$?.ToList();]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

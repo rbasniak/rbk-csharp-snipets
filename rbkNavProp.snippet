@@ -1,0 +1,31 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>rbkNavProp</Title>
+      <Description>Creates a new navigation property</Description>
+      <Author>rbasniak</Author>
+      <Shortcut>rbkNavProp</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Property name</ToolTip>
+          <Default>MyProperty</Default>
+        </Literal>
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Property type</ToolTip>
+          <Default>MyType</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[public virtual Guid $name$Id { get; private set; }
+    public virtual $type$ $name$ { get; private set; }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

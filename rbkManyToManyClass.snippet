@@ -1,0 +1,54 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>rbkManyToManyClass</Title>
+      <Description>Creates a new many-to-many class</Description>
+      <Author>rbasniak</Author>
+      <Shortcut>rbkManyToManyClass</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>entity1</ID>
+          <ToolTip>First entity name</ToolTip>
+          <Default>MyFirstEntity</Default>
+        </Literal>
+        <Literal>
+          <ID>entity2</ID>
+          <ToolTip>Second entity name</ToolTip>
+          <Default>MySecondEntity</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[public class $entity1$To$entity2$
+    {
+        protected $entity1$To$entity2$()
+        {
+        }
+        
+        public $entity1$To$entity2$(Guid $entity1$Id, Guid $entity2$Id)
+        {
+            $entity1$Id = $entity1$Id;
+            $entity2$Id = $entity2$Id;
+        }
+        
+        public $entity1$To$entity2$($entity1$ $entity1$, $entity1$ $entity2$)
+        {
+            $entity1$ = $entity1$;
+            $entity2$ = $entity2$;
+        }
+        
+        public virtual Guid $entity1$Id { get; private set; }
+        public virtual $entity1$ $entity1$ { get; private set; }
+        
+        public virtual Guid $entity2$Id { get; private set; }
+        public virtual $entity2$ $entity2$ { get; private set; }
+        
+    }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
