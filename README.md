@@ -1,4 +1,4 @@
-# rbk-csharp-snipets
+# rbk-csharp-snippets
 
 C# Code Snippets for use with rbkApiModules libraries
 
